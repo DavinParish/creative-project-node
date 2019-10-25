@@ -4,11 +4,11 @@
 <head>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <title>A place for Cat people</title>
+  <title>Cats and Company</title>
 </head>
 
 <body>
-  <h1>A place for Cat people</h1>
+  <h1 class = "header">Cats and Company</h1>
   <div id = "page">
   <div id = "app">
     <div v-if="loading">
@@ -19,14 +19,11 @@
       <h2>{{current.safe_title}}</h2>
       <img v-bind:src="current.image" v-bind:alt="current.alt" id = "catPic">
       <p>{{current.alt}}</p>
-      <p><i>#{{current.num}}, drawn on {{current.day}} {{month}} {{current.year}}</i></p>
       <p>
         <button v-on:click="previousCat">Previous</button>
         <button v-on:click="nextCat">Next</button>
       </p>
       <button v-on:click="randomCat">Random</button>
-      <star-rating active-color="red" current-rating = "hidden" @rating-selected ="setRating"></star-rating>
-      <p>Average Rating: {{averageRating}}</p>
       
       <h3>Add a Comment</h3>
       <form v-on:submit.prevent="addCat">
@@ -46,6 +43,15 @@
     </div>
   </div>
   </div>
+  <footer class = "footer">
+          <div id = "author-info">
+            <p>Author: Davin Parish</p>
+          </div>
+          <div id = "social-info">
+            <p>Github: <a href="https://github.com/DavinParish/creative-project-node" id = "ghub-link">
+              <i>Our Github</i></a></p>
+          </div>
+  </footer>
   <script src="moment.js"></script>
   <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
