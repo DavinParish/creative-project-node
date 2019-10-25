@@ -1,0 +1,41 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 20px 100px 0px 100px;
+    background: #f3f3f3;
+    text-align:center;
+}
+#page{
+    display:flex;
+    justify-content: center;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+}
+polygon{
+    color: red;
+}
+.vue-star-rating-rating-text[data-v-34cbeed1]{
+    visibility: hidden;
+}
+
+
+#catPic{
+    max-width: 200px;
+    
+}
+
+#app{
+    background-color: grey;
+    padding: 30px;
+    width:80%;
+    border-radius: 20px;
+    
+}
