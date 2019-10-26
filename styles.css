@@ -4,14 +4,14 @@ body {
     /*padding: 20px 100px 0px 100px;*/
     padding: 0;
     margin:0;
-    background-color: #003300;
+    background-color: white !important;
     text-align:center;
 }
 
 #page{
     display:flex;
     justify-content: center;
-    background-color: #003300;
+    background-color: white;
     
 }
 button {
@@ -84,7 +84,7 @@ polygon{
     padding: 15px;
     top:0;
     font-family: sans-serif;
-    color: #003300;
+    color: white;
     width:100%;
     font-family: serif;
     font-size: 55px;

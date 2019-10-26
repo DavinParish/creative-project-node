@@ -19,13 +19,10 @@
       <h2>{{current.safe_title}}</h2>
       <img v-bind:src="current.image" v-bind:alt="current.alt" id = "catPic">
       <p>{{current.alt}}</p>
-      <p>
-        <button v-on:click="previousCat">Previous</button>
-        <button v-on:click="nextCat">Next</button>
-      </p>
       <button v-on:click="randomCat">Random</button>
       
-      <h3>Add a Comment</h3>
+      <h3>Add a Comment about our page! </h3>
+      <p>We hope you enjoy all the random cats! :)</p>
       <form v-on:submit.prevent="addCat">
         <input v-model="addedName" placeholder="Name"></p>
         <textarea v-model="addedComment"></textarea>
@@ -33,7 +30,7 @@
         <button type="submit">Comment</button>
       </form>
       
-      <h3>Comments</h3>
+      
       <div v-for="comment in comments[number]">
         <hr>
         <p>{{comment.text}}</p>
@@ -45,7 +42,7 @@
   </div>
   <footer class = "footer">
           <div id = "author-info">
-            <p>Author: Davin Parish</p>
+            <p>Author: Davin Parish & Spring Cullen</p>
           </div>
           <div id = "social-info">
             <p>Github: <a href="https://github.com/DavinParish/creative-project-node" id = "ghub-link">
